@@ -1,0 +1,19 @@
+h1,h2 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+
+    font-size: 25px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+.align {
+    text-align:center
+}
