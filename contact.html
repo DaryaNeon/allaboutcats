@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <title>About cats</title>
     <link rel="stylesheet" href="style.css">
@@ -22,17 +23,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a href="index.html" class="nav-link btn text-light">Главная</a>
+                <a href="index.html" class="nav-link btn text-dark">Главная</a>
             </li>
-            <li class="nav-item ">
-                <a href="breeds.html" class="nav-link btn text-light">Породы</a>
-                 
-                </li>
+            <li class="nav-item dropdown">
+                <a href="breeds.html" class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" type="button" >Породы</a>
+                <ul class="dropdown-menu">
+                  <li><a href="breeds.html#porodi" class="dropdown-item">Скоттиш-страйт </a></li>
+                  <li><a href="breeds.html#skotish" class="dropdown-item">Бенгальская кошка</a></li>
+                  <li><a href="breeds.html#bengal" class="dropdown-item">Донской сфинкс</a></li>
+                  <li><a href="breeds.html#sfincs" class="dropdown-item">Немецкий рекс</a></li>
+                  <li><a href="breeds.html#reks" class="dropdown-item">Тайская кошка</a></li>
+                </ul>
+              </li>
             <li class="nav-item">
-                <a href="exhibitions.html" class="nav-link btn text-light">Выставка</a>
+                <a href="exhibitions.html" class="nav-link btn text-dark">Выставка</a>
             </li>
             <li class="nav-item">
-                <a href="contact.html" class="nav-link btn text-light">Контакты</a>
+                <a href="contact.html" class="nav-link btn text-dark">Контакты</a>
             </li>
         </ul>
     </div>
@@ -44,10 +51,9 @@
     <p class="text-center w-responsive mx-auto mb-5">У вас есть какие-то вопросы по поводу выставки? Сообщите нам, и мы сразу решим вашу проблему.</p>
     
     <div class="row">
-        <div class="column">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41037.73359891057!2d36.18278659364984!3d49.99526510711486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81d5a6d08a2a2065!2z0JvQvtC60L7QvNC-0YLQuNCy!5e0!3m2!1sru!2sua!4v1623543927051!5m2!1sru!2sua" width="600" height="450" style="border:0;"   allowfullscreen="" loading="lazy"></iframe>
-        </div>
-            <div class="col-md-9 mb-md-0 mb-5">
+        
+   
+            <div class="col-md-12 mb-md-0 mb-5">
             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
                 <!--Grid row-->
@@ -100,15 +106,18 @@
 
                     </div>
                 </div>
+                <div class="text-center text-md-left p-4">
+                    <a class="btn btn-info" onclick="document.getElementById('contact-form').submit();">Отправить</a>
+                </div>
+                <div class="status"></div>
+            </div>
                 <!--Grid row-->
-
+                <div class="column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41037.73359891057!2d36.18278659364984!3d49.99526510711486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81d5a6d08a2a2065!2z0JvQvtC60L7QvNC-0YLQuNCy!5e0!3m2!1sru!2sua!4v1623543927051!5m2!1sru!2sua" width="600" height="450" style="border:0;"   allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </form>
 
-            <div class="text-center text-md-left p-4">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Отправить</a>
-            </div>
-            <div class="status"></div>
-        </div>
+           
         <!--Grid column-->
 
         <!--Grid column-->
@@ -130,43 +139,109 @@
     </div>
 </section>
 </div>
-<footer class="bg-light text-center text-white ">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #3b5998;"
-          href="https://www.facebook.com/profile.php?id=100005633445476"
-          role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        
-        <!-- Instagram -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #ac2bac;"
-          href="https://instagram.com/darya_neon?utm_medium=copy_link"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <!-- Github -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #333333;"
-          href="https://github.com/DaryaNeon"
-          role="button"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section>
+
     </div>
     
-  
-  </footer>
- 
+    <footer class="page-footer font-small unique-color-dark">
 
+        <div style="background-color: #6f7ed3bd;">
+          <div class="container">
+      
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+      
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Get connected with us on social networks!</h6>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+      
+                <!-- Facebook -->
+                <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100005633445476">
+                  <i class="fab fa-facebook-f white-text mr-4"> </i>
+                </a>
+        
+                <!--Instagram-->
+                <a class="ins-ic " href="https://instagram.com/darya_neon?utm_medium=copy_link">
+                  <i class="fab fa-instagram white-text"> </i>
+                </a>
+      
+              </div>
+              <!-- Grid column -->
+      
+            </div>
+            <!-- Grid row-->
+      
+          </div>
+        </div>
+      
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+      
+          <!-- Grid row -->
+          <div class="row mt-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      
+              <!-- Content -->
+              <h6 class="text-uppercase font-weight-bold">Любители котиков</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>Выставка котиков проходит каждый месяц. Вы можете прийти как сами, так и со своими знакомыми и приятелями.</p>
+      
+            </div>
+          
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Полезные ссылки</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a href="#!">FQA</a>
+              </p>
+              
+              <p>
+                <a href="#!">Помощь</a>
+              </p>
+              <p>
+                <a href="#!">Статьи</a>
+              </p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Контакты</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <i class="fas fa-home mr-3"></i> СК Локомотив, Харьков, Украина</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> dasha.zadorojnaya@gmail.com</p>
+              <p>
+                <i class="fas fa-phone mr-3"></i>+380664322239</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Самый лучший сайт про котиков:
+          <a href="#"> Дарья Задорожная</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
